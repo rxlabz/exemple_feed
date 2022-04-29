@@ -1,0 +1,38 @@
+name: feed_app
+description: feed_app
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  feed_lib:
+    path: ../feed_lib
+
+  go_router: ^3.0.5
+  validators: ^3.0.0
+  http: ^0.13.4
+  provider: ^6.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+  feed_test_lib:
+      path: ../feed_test_lib
+
+  flutter_lints: ^1.0.0
+  build_runner: ^2.1.8
+  json_serializable: ^6.1.5
+  mocktail: ^0.3.0
+
+flutter:
+  uses-material-design: true

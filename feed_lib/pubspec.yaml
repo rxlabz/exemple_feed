@@ -1,0 +1,31 @@
+name: feed_lib
+description: FeedApp shared lib
+version: 0.0.1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  freezed_annotation: ^1.1.0
+  http: ^0.13.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+  feed_test_lib:
+    path: ../feed_test_lib
+
+  build_runner: ^2.1.8
+  freezed: ^1.1.0
+  mocktail: ^0.3.0
+  alchemist: ^0.3.2
+  golden_toolkit: ^0.13.0
+
+flutter:
+  uses-material-design: true
