@@ -73,7 +73,7 @@ void main() {
         ChangeNotifierProvider<FeedController>.value(
           value: controller..loadAllTask = const AsyncTask.loading(),
         ),
-        ChangeNotifierProvider<AuthController>.value(value: authController),
+        ChangeNotifierProvider<AuthController >.value(value: authController),
       ],
       child: const MaterialApp(home: HomeScreen()),
     );

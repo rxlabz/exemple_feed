@@ -1,8 +1,7 @@
-import 'package:feed_lib/src/controllers/auth_controller.dart';
+import 'package:feed_lib/feed_lib.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import 'package:feed_lib/feed_lib.dart';
 
 import 'feedlist_controller.dart';
 

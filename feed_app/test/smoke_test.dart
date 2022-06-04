@@ -1,4 +1,4 @@
-import 'package:feed_app/main.dart';
+import 'package:feed_app/app.dart';
 import 'package:feed_app/main_provider.dart';
 import 'package:feed_app/screens/detail_screen.dart';
 import 'package:feed_app/screens/home_screen.dart';
@@ -49,7 +49,7 @@ void main() {
   testWidgets(
     'Smoke test - complete',
     (WidgetTester tester) async {
-      mockNetworkImagesFor() async {
+      mockNetworkImagesFor(() async {
         final authService = MockAuthService();
 
         when(
@@ -134,7 +134,7 @@ void main() {
         await tester.pumpAndSettle();
 
         expect(find.byType(LoginScreen), findsOneWidget);
-      }
+      });
     },
   );
 }

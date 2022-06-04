@@ -56,15 +56,10 @@ class NewMessageAsyncButton extends StatelessWidget {
       Selector<FeedController, AsyncTask<Message?>>(
         selector: (_, controller) => controller.sendMessageTask,
         builder: (context, task, _) => FloatingActionButton(
-          child: task.when(
-            result: (value) => const Icon(Icons.add),
-            loading: () => const CircularProgressIndicator(
-              color: Colors.white,
-            ),
-            error: (_) => const Icon(Icons.warning),
-          ),
           onPressed: task.when(
             result: (value) {
+              final  feedController = context.read<FeedController>();
+
               return () async {
                 final user = context.read<AuthController>().user!;
                 final messageContent = await showDialog(
@@ -74,19 +69,26 @@ class NewMessageAsyncButton extends StatelessWidget {
                   ),
                 );
                 if (messageContent?.isNotEmpty == true) {
-                  await context.read<FeedController>().sendMessage(
+                  await feedController.sendMessage(
                         Message(
                           name: user.name,
                           date: DateTime.now(),
                           message: messageContent,
                         ),
                       );
-                  context.read<FeedController>().loadAllMessages();
+                  feedController.loadAllMessages();
                 }
               };
             },
             loading: () => null,
             error: (error) => null,
+          ),
+          child: task.when(
+            result: (value) => const Icon(Icons.add),
+            loading: () => const CircularProgressIndicator(
+              color: Colors.white,
+            ),
+            error: (_) => const Icon(Icons.warning),
           ),
         ),
       );

@@ -1,4 +1,3 @@
-import 'package:feed_app_cubit/screens/error_screen.dart';
 import 'package:feed_app_cubit/screens/message_cubits.dart';
 import 'package:feed_lib/feed_lib.dart';
 import 'package:flutter/material.dart';

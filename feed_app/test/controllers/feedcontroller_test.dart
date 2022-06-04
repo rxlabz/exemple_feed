@@ -1,8 +1,8 @@
 import 'package:feed_app/screens/feedlist_controller.dart';
 import 'package:feed_lib/feed_lib.dart';
 import 'package:feed_test_lib/feed_test_lib.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:test/test.dart';
 
 void main() {
   final feedService = MockFeedService();

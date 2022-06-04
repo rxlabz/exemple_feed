@@ -41,6 +41,8 @@ GoRouter buildRouter(AuthCubit authCubit) => GoRouter(
             if (user != null && state.subloc == '/login') {
               return '/';
             }
+
+            return null;
           },
           loading: () => null,
           error: (error) => null,
