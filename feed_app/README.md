@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/rxlabz/exemple_feed/branch/master/graph/badge.svg?token=HUCVV7DY40)](https://codecov.io/gh/rxlabz/exemple_feed)
+
 # feed_app
 
 Exemple d'application utilisant :

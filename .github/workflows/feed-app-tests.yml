@@ -24,5 +24,6 @@ jobs:
       with:
         token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
         name: codecov-umbrella # optional
+        flags: provider_app
         fail_ci_if_error: true # optional (default = false)
         verbose: true # optional (default = false)
