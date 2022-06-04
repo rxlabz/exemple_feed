@@ -1,4 +1,5 @@
 import 'package:feed_app/main.dart';
+import 'package:feed_app/main_provider.dart';
 import 'package:feed_app/screens/detail_screen.dart';
 import 'package:feed_app/screens/feedlist_controller.dart';
 import 'package:feed_app/screens/home_screen.dart';

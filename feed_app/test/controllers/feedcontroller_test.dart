@@ -51,8 +51,9 @@ void main() {
     expect(controller.loadDetailsTask, AsyncTask<Message?>.result(fakeMessage));
 
     controller.loadDetailsTask.maybeWhen(
-        result: (value) => expect(value.id, 1),
-        orElse: () => throw Exception());
+      result: (value) => expect(value.id, 1),
+      orElse: () => throw Exception(),
+    );
   });
 
   test('should be in error state after load details exception', () async {

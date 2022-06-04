@@ -1,0 +1,33 @@
+name: feed_app_cubit
+description: Feed app example based on cubit
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  feed_lib:
+    path: ../feed_lib
+
+  go_router: ^3.0.5
+  validators: ^3.0.0
+  bloc: ^8.0.3
+  flutter_bloc: ^8.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+  feed_test_lib:
+    path: ../feed_test_lib
+  bloc_test: ^9.0.3
+  mocktail: ^0.3.0
+
+flutter:
+  uses-material-design: true

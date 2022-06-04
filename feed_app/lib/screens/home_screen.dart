@@ -10,20 +10,13 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    // lance le chargement des messages
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
-      Provider.of<FeedController>(context, listen: false).loadAllMessages();
-    });
-
-    return Scaffold(
-      appBar: FeedAppBar(
-        onLogout: context.read<AuthController>().logout,
-      ),
-      floatingActionButton: const NewMessageAsyncButton(key: Key('btAdd')),
-      body: const _Feedlist(),
-    );
-  }
+  Widget build(BuildContext context) => Scaffold(
+        appBar: FeedAppBar(
+          onLogout: context.read<AuthController>().logout,
+        ),
+        floatingActionButton: const NewMessageAsyncButton(key: Key('btAdd')),
+        body: const _Feedlist(),
+      );
 }
 
 class _Feedlist extends StatelessWidget {

@@ -50,6 +50,7 @@ class FeedController extends ChangeNotifier {
     }
   }
 
+
   Future<void> loadMessage(int messageId) async {
     loadDetailsTask = const AsyncTask.loading();
 

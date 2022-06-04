@@ -32,6 +32,7 @@ void main() {
     final response = await service.loadAll();
 
     expect(response.first, fakeMessage);
+    expect(response.length, 2);
   });
 
   test('should return the message details', () async {

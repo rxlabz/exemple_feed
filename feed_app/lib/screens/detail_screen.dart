@@ -1,5 +1,6 @@
 import 'package:feed_lib/src/controllers/auth_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:feed_lib/feed_lib.dart';
 
@@ -12,15 +13,10 @@ class DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // chargement du message sélectionné
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
-      Provider.of<FeedController>(context, listen: false)
-          .loadMessage(messageId);
-    });
-
     return Scaffold(
       appBar: FeedAppBar(
         onLogout: context.read<AuthController>().logout,
+        onBack: context.pop,
       ),
       body: Selector<FeedController, AsyncTask<Message?>>(
         selector: (_, controller) => controller.loadDetailsTask,
@@ -80,9 +76,10 @@ class MessageCard extends StatelessWidget {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Padding(
+              Padding(
                 padding: EdgeInsets.all(8.0),
-                child: Icon(Icons.account_circle),
+                child: Image.network(
+                    'https://i.pravatar.cc/150?img=${message.id}'),
               ),
               Expanded(
                 child: Column(

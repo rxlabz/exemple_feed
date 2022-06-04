@@ -1,24 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bd39146-ca5a-41e2-a589-1d621f94d26d" name="Changes" comment="" />
+    <list default="true" id="6bd39146-ca5a-41e2-a589-1d621f94d26d" name="Changes" comment="readme">
+      <change afterPath="$PROJECT_DIR$/feed_app/lib/main_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_api/bin/server.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_api/bin/server.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_api/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/feed_api/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_api/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/feed_api/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_app/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_app/lib/router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_app/lib/router.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_app/lib/screens/detail_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_app/lib/screens/detail_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_app/lib/screens/feedlist_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_app/lib/screens/feedlist_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_app/lib/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_app/lib/screens/home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/feed_app/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_app/test/controllers/feedcontroller_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_app/test/controllers/feedcontroller_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_app/test/screens/loginscreen_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_app/test/screens/loginscreen_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_app/test/smoke_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_app/test/smoke_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_example.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/feed_example.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_example.iws" beforeDir="false" afterPath="$PROJECT_DIR$/feed_example.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_lib/lib/src/widgets/appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_lib/lib/src/widgets/appbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_lib/lib/src/widgets/message_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_lib/lib/src/widgets/message_tile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed_lib/test/services/feed_service_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/feed_lib/test/services/feed_service_test.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="28T5CkZX6SrkrZtiTgui5LNxUZG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RunManager" selected="Flutter.main.dart (1)">
+    <configuration name="server.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/feed_api/bin/server.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/feed_api" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in server_test.dart" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/feed_api/test/server_test.dart" />
+      <option name="testName" value="server_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/feed_app/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/feed_app_bloc/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Login form validation" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="Login form validation" />
+      <option name="testFile" value="$PROJECT_DIR$/feed_app/test/screens/loginscreen_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="renders" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="renders" />
+      <option name="testFile" value="$PROJECT_DIR$/feed_lib/test/widgets/message_tile_golden_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart Command Line App.server.dart" />
+        <item itemvalue="Flutter.main.dart (1)" />
+        <item itemvalue="Dart Test.Tests in server_test.dart" />
+        <item itemvalue="Flutter Test.renders" />
+        <item itemvalue="Flutter Test.Login form validation" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -29,10 +125,48 @@
       <option name="presentableId" value="Default" />
       <updated>1651227611483</updated>
       <workItem from="1651227612789" duration="56000" />
+      <workItem from="1651227674408" duration="6156000" />
+      <workItem from="1652947380256" duration="1167000" />
+      <workItem from="1652948972675" duration="6496000" />
+      <workItem from="1653034870183" duration="325000" />
+      <workItem from="1654260387649" duration="13147000" />
     </task>
+    <task id="LOCAL-00001" summary="v1">
+      <created>1651228050561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651228050561</updated>
+    </task>
+    <task id="LOCAL-00002" summary="readme">
+      <created>1651234372122</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651234372122</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="v1" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
 </project>

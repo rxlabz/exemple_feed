@@ -9,7 +9,7 @@ import 'package:provider/provider.dart';
 void main() {
   final mailField = find.byKey(const Key('fieldMail'));
 
-  var btLogin = find.byKey(const Key('btLogin'));
+  final btLogin = find.byKey(const Key('btLogin'));
 
   final passField = find.byKey(const Key('fieldPass'));
 
@@ -45,8 +45,6 @@ void main() {
 
     await tester.enterText(mailField, 'toto');
 
-    await tester.pump();
-
     await tester.tap(btLogin);
 
     await tester.pumpAndSettle();
@@ -64,7 +62,6 @@ void main() {
     expect(find.text('8 caractères minimum'), findsOneWidget);
 
     await tester.enterText(passField, 'azertyuiaz');
-    await tester.pump();
 
     await tester.tap(btLogin);
     await tester.pumpAndSettle();

@@ -7,10 +7,10 @@ import 'package:shelf_cors_headers/shelf_cors_headers.dart';
 import 'package:shelf_router/shelf_router.dart';
 
 final List<Map<String, dynamic>> messages = List.generate(
-  100,
+  50,
   (index) => {
     'id': index + 1,
-    'name': 'User$index',
+    'name': 'User${index + 1}',
     'message':
         'In finibus sit amet tellus ac porta. Aliquam luctus luctus efficitur. Curabitur non ullamcorper velit. Nam sed vulputate mauris, in vehicula turpis. Etiam vitae ex elementum, iaculis enim id, finibus orci.',
     'date': DateTime(2022).add(Duration(days: index))
@@ -71,9 +71,12 @@ Response _detailsHandler(Request request) {
   }
 
   final messageId = int.tryParse(request.params['messageId'] ?? '');
-  if (messageId == null) Response.notFound('message not found : $messageId');
+  if (messageId == null) {
+    return Response.notFound('message not found : $messageId');
+  }
 
-  final message = Map.from(messages[messageId! - 1]);
+  final message =
+      Map.from(messages.firstWhere((element) => element['id'] == messageId));
   message['replies'] = replies(messageId);
   return Response.ok(jsonEncode(message, toEncodable: jsonEncoderHelper));
 }

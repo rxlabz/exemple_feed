@@ -20,9 +20,13 @@ class MessageTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       key: Key('tile$index'),
-      leading: const Icon(Icons.account_circle),
+      leading: Image.network(
+        'https://i.pravatar.cc/150?img=${message.id}',
+        errorBuilder: (context, _, __)=>const Icon(Icons.account_circle),
+      ),
       title: Text(message.name),
-      subtitle: Text(message.message),
+      subtitle: Text(message.message, maxLines: 3,overflow:TextOverflow.ellipsis ),
+
       onTap: onTap,
     );
   }
