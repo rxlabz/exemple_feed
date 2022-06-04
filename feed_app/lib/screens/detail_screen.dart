@@ -77,9 +77,12 @@ class MessageCard extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: Image.network(
-                    'https://i.pravatar.cc/150?img=${message.id}'),
+                  'https://i.pravatar.cc/150?img=${message.id}',
+                  errorBuilder: (context, _, __) =>
+                      const Icon(Icons.account_circle),
+                ),
               ),
               Expanded(
                 child: Column(

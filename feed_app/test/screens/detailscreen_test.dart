@@ -5,34 +5,40 @@ import 'package:feed_test_lib/feed_test_lib.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
+import 'package:network_image_mock/network_image_mock.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   testWidgets('Should display message screen', (WidgetTester tester) async {
-    final authService = MockAuthService();
+    mockNetworkImagesFor(() async {
+      final authService = MockAuthService();
 
-    final feedService = MockFeedService();
-    when(() => feedService.loadMessage(1)).thenAnswer(
-      (invocation) => Future.value(fakeMessageWithReplies),
-    );
+      final feedService = MockFeedService();
+      when(() => feedService.loadMessage(1)).thenAnswer(
+        (invocation) => Future.value(fakeMessageWithReplies),
+      );
 
-    final app = MaterialApp(
-      home: MultiProvider(
-        providers: [
-          ChangeNotifierProvider.value(value: AuthController(authService)),
-          ChangeNotifierProvider.value(
-              value: FeedController()..service = feedService),
-        ],
-        child: const DetailsScreen(messageId: 1),
-      ),
-    );
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(app);
+      final app = MaterialApp(
+        home: MultiProvider(
+          providers: [
+            ChangeNotifierProvider.value(value: AuthController(authService)),
+            ChangeNotifierProvider<FeedController>.value(
+              value: FeedController()
+                ..service = feedService
+                ..loadMessage(1),
+            ),
+          ],
+          child: const DetailsScreen(messageId: 1),
+        ),
+      );
+      // Build our app and trigger a frame.
+      await tester.pumpWidget(app);
 
-    await tester.pumpAndSettle();
+      await tester.pumpAndSettle();
 
-    expect(find.text('Hola'), findsOneWidget);
-    expect(find.text('User0'), findsOneWidget);
+      expect(find.text('Hola'), findsOneWidget);
+      expect(find.text('User0'), findsOneWidget);
+    });
   });
 
   testWidgets('Should display an error', (WidgetTester tester) async {
@@ -46,7 +52,10 @@ void main() {
         providers: [
           ChangeNotifierProvider.value(value: AuthController(authService)),
           ChangeNotifierProvider.value(
-              value: FeedController()..service = feedService),
+            value: FeedController()
+              ..service = feedService
+              ..loadMessage(1),
+          ),
         ],
         child: const DetailsScreen(messageId: 1),
       ),

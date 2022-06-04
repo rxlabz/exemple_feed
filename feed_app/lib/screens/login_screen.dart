@@ -21,7 +21,7 @@ class LoginScreen extends StatelessWidget {
         key: _formKey,
         child: Center(
           child: ConstrainedBox(
-            constraints: BoxConstraints.loose(const Size(320, double.infinity)),
+            constraints: const BoxConstraints(maxWidth: 320),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [

@@ -17,7 +17,9 @@ void main() {
     when(() => service.loadAll())
         .thenAnswer((invocation) => Future.value([message]));
 
-    final controller = FeedController()..service = service;
+    final controller = FeedController()
+      ..service = service
+      ..loadAllMessages();
 
     final app = MultiProvider(
       providers: [
@@ -41,7 +43,9 @@ void main() {
 
     when(() => service.loadAll()).thenThrow(Exception());
 
-    final controller = FeedController()..service = service;
+    final controller = FeedController()
+      ..service = service
+      ..loadAllMessages();
 
     final app = MultiProvider(
       providers: [
